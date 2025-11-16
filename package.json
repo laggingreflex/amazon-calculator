@@ -1,0 +1,20 @@
+{
+  "name": "amazon-calculator",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "start": "vite --port 4345",
+    "build": "vite build",
+    "test": "node src/lib/sort.test.js && node src/lib/takeoutZipParser.test.js"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "jszip": "^3.10.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.3",
+    "vite": "^5.4.10"
+  }
+}

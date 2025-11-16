@@ -1,0 +1,74 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.layout {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.product-list {
+  padding: 10px;
+}
+
+.product-list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.product-list th,
+.product-list td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.total-price {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  padding: 12px 16px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.02);
+}
+
+.total-price__row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.total-price__title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.total-price__counts {
+  font-variant-numeric: tabular-nums;
+  color: #555;
+}
+
+.total-price__value {
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  margin-left: auto;
+}
+
+h1 {
+  margin: 0 0 4px 0;
+}
+
+/* ASIN-only enrichment hint styling */
+.product-list tr.asin-only-row td {
+  border-left: 3px solid #ffa50066;
+}
